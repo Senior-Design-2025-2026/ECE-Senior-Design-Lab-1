@@ -43,6 +43,18 @@ services:
         condition: service_healthy
     restart: unless-stopped
 
+  celery_worker:
+    container_name: L1-celery-worker
+    build: L1-celery-worker/
+    environment:
+      - SOCK=${SOCK}
+      - DB_PATH=${DB_PATH}
+    volumes:
+      - redis-socket:/run/redis
+    depends_on:
+      redis:
+        condition: service_healthy
+
 volumes:
   sqlite-db:
   redis-socket:
