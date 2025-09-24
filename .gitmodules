@@ -15,3 +15,6 @@
 [submodule "L1-web-application"]
 	url = git@github.com:Senior-Design-2025-2026/L1-web-application.git
 	path = L1-web-application
+[submodule "L1-sqlalchemy-orm"]
+	path = L1-sqlalchemy-orm
+	url = git@github.com:Senior-Design-2025-2026/L1-sqlalchemy-orm
