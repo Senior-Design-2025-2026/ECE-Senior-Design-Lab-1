@@ -1,0 +1,47 @@
+services:
+  redis:
+    image: redis:7-alpine
+    user: root
+    command: >
+      sh -c 'mkdir -p /run/redis &&
+             chmod 777 /run/redis &&
+             exec redis-server --unixsocket /run/redis/redis.sock --unixsocketperm 777'
+    volumes:
+      - redis-socket:/run/redis
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -s /run/redis/redis.sock ping | grep PONG"]
+      interval: 2s
+      timeout: 1s
+      retries: 15
+
+  dash:
+    build: web/
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      - HOST=${HOST}
+      - PORT=${PORT}
+      - SOCK=${SOCK}
+    volumes:
+      - sqlite-db:/app/database/sqlite
+      - redis-socket:/run/redis
+    depends_on:
+      redis:
+        condition: service_healthy
+    container_name: dash_app
+
+  testing_stream:
+    build: testing_stream
+    container_name: stream_writer
+    environment:
+      - SOCK=${SOCK}
+    volumes:
+      - redis-socket:/run/redis
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  sqlite-db:
+  redis-socket:
