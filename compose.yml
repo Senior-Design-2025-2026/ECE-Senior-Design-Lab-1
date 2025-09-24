@@ -1,5 +1,6 @@
 services:
   redis:
+    container_name: L1-redis
     image: redis:7-alpine
     user: root
     command: >
@@ -15,7 +16,8 @@ services:
       retries: 15
 
   dash:
-    build: web/
+    container_name: L1-web-application
+    build: L1-web-application/
     ports:
       - "${PORT}:${PORT}"
     environment:
@@ -28,11 +30,10 @@ services:
     depends_on:
       redis:
         condition: service_healthy
-    container_name: dash_app
 
   testing_stream:
-    build: testing_stream
-    container_name: stream_writer
+    container_name: L1-testing-redis-stream_writer
+    build: L1-testing-redis-stream-writer/
     environment:
       - SOCK=${SOCK}
     volumes:
