@@ -1,0 +1,13 @@
+# this file is simply defining the submodules within our completed repository. 
+
+[submodule "L1-testing-redis-stream-writer"]
+	url = git@github.com:Senior-Design-2025-2026/L1-testing-redis-stream-writer.git
+
+[submodule "L1-celery-worker"]
+	url = git@github.com:Senior-Design-2025-2026/L1-celery-worker.git
+
+[submodule "L1-embedded-thermostat"]
+	url = git@github.com:Senior-Design-2025-2026/L1-embedded-thermostat.git
+
+[submodule "L1-web-application"]
+	url = git@github.com:Senior-Design-2025-2026/L1-web-application.git
