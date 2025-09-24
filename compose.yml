@@ -17,7 +17,9 @@ services:
 
   dash:
     container_name: L1-web-application
-    build: L1-web-application/
+    build: 
+      context: .
+      dockerfile: L1-web-application/Dockerfile
     ports:
       - "${PORT}:${PORT}"
     environment:
@@ -45,7 +47,9 @@ services:
 
   celery_worker:
     container_name: L1-celery-worker
-    build: L1-celery-worker/
+    build: 
+      context: .
+      dockerfile: L1-celery-worker/Dockerfile
     environment:
       - SOCK=${SOCK}
       - DB_PATH=${DB_PATH}
