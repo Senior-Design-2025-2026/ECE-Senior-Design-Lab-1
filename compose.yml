@@ -52,6 +52,8 @@ services:
       dockerfile: L1-celery-worker/Dockerfile
     environment:
       - SOCK=${SOCK}
+      - EMAIL_USER=${EMAIL_USER}    
+      - EMAIL_PASS=${EMAIL_PASS}    
       - DB_URL=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres_db:5432/${POSTGRES_DB}
     volumes:
       - redis-socket:/run/redis
