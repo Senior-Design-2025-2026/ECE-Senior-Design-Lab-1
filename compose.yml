@@ -33,9 +33,9 @@ services:
       redis:
         condition: service_healthy
 
-  testing_stream:
-    container_name: L1-testing-redis-stream_writer
-    build: L1-testing-redis-stream-writer/
+  stream_writer:
+    container_name: L1-redis-stream_writer
+    build: L1-redis-stream-writer/
     environment:
       - SOCK=${SOCK}
     volumes:
