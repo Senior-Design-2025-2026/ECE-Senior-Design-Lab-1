@@ -21,10 +21,10 @@ services:
       context: .
       dockerfile: L1-web-application/Dockerfile
     ports:
-      - "${PORT}:${PORT}"
+      - "${HOST}:${DASH_PORT}:${DASH_PORT}"
     environment:
       - HOST=${HOST}
-      - PORT=${PORT}
+      - DASH_PORT=${DASH_PORT}
       - SOCK=${SOCK}
       - DB_URL=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres_db:5432/${POSTGRES_DB}
     volumes:
@@ -37,9 +37,13 @@ services:
     container_name: L1-redis-stream_writer
     build: L1-redis-stream-writer/
     environment:
+      - HOST=${HOST}
       - SOCK=${SOCK}
+      - TEMPERATURE_PORT=${TEMPERATURE_PORT}
     volumes:
       - redis-socket:/run/redis
+    ports:
+      - "${HOST}:${TEMPERATURE_PORT}:${TEMPERATURE_PORT}"
     depends_on:
       redis:
         condition: service_healthy
