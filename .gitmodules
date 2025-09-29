@@ -3,8 +3,8 @@
     path = L1-celery-worker
 
 [submodule "L1-embedded-thermostat"]
-	url = git@github.com:Senior-Design-2025-2026/L1-embedded-thermostat.git
-	path = L1-embedded-thermostat
+	url = git@github.com:Senior-Design-2025-2026/working_embedded
+	path = working_embedded
 
 [submodule "L1-web-application"]
 	url = git@github.com:Senior-Design-2025-2026/L1-web-application.git
@@ -13,6 +13,7 @@
 [submodule "L1-sqlalchemy-orm"]
 	path = L1-sqlalchemy-orm
 	url = git@github.com:Senior-Design-2025-2026/L1-sqlalchemy-orm
+
 [submodule "L1-redis-stream-writer"]
 	path = L1-redis-stream-writer
 	url = git@github.com:Senior-Design-2025-2026/L1-redis-stream-writer
