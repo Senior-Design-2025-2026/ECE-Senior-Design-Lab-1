@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+
+**/*.pyc
+**/*.pyo
+**/*.mo
+**/__pycache__/
+**/*.md
