@@ -1,2 +1,8 @@
+[submodule "L1-EXTENSION-stream-writer"]
+	url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-stream-writer.git
+
+[submodule "L1-EXTENSION-celery-worker"]
+	url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-celery-worker.git
+
 [submodule "L1-EXTENSION-web-application"]
 	url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-web-application.git
