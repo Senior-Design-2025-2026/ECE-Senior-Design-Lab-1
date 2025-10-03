@@ -1,17 +1,10 @@
-# ECE-Senior-Design-Lab-1
-ECE:4880 – Senior Design 1 at the University of Iowa tasked our team with creating a robust smart thermometer that has internet connectivity and user-friendly functionality.
+# ECE-Senior-Design-Lab-1 (Extension Application)
 
-Our solution provides an easy way for users to view temperature data physically on our box or remotely from a computer.
+To move past a prototype and build a more robust system, this application was created with support for further iterations of the project in mind. Having already completed the base requirements, this application was purely experimental and aimed at how our protoype could be improved.
 
-There are multiple input controls used within the system, such as switches and buttons, along with cable connectors to remove sensors when there is no need for use.
+The biggest change with between this extension and the [original](https://github.com/Senior-Design-2025-2026/L1-web-application) is the architecture. This system utilizes four components: a dedicated entry point for streaming data into a UNIX Socket provided Redis Stream, a PostgreSQL database to store temperature readings and user information, and an asynchronous processor with a pool of workers to handle blocking processes with high overhead in the background, and an improved dashboard UI designed for mobile devices. Additionally, all components were containerized using Docker for ease of scalability and deployment.  
 
-The user receives feedback via an OLED screen, and virtually all data is uploaded to the web.
-
-Authors:
-- [Steven Austin]()
-- [Zack Mulholland](https://www.linkedin.com/in/zack-mulholland-317914254/)
-- [Sage Marks](https://www.linkedin.com/in/sage-marks/)
-- [Matthew Krueger](https://www.linkedin.com/in/mattnkrueger/)
+With this performant and extensible foundation, any smart-home application is straightforward and highly configurable; Adding an additional sensor (thermometer, humidity, air quality, etc) just means adding new endpoints to handle sensor information within the Streamer API service, creating a new stream, and creating a new table within the database. The additional sensor information can then be used for analytics and real-time operations in response to external sensor readings.  
 
 ## System Architecture
 <div align="center">
@@ -39,17 +32,17 @@ Authors:
 
 ## Source Code
 **Embedded System:**  
-  - [L1-EXTENSION-embedded-thermostat](git@github.com:Senior-Design-2025-2026/L1-EXTENSION-embedded-thermostat.git)
+  - [L1-EXTENSION-embedded-thermostat](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-embedded-thermostat)
 
 **Software Application:**
   - Web Application  
-    - [L1-EXTENSION-web-application](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-web-application/tree/97a63ee64f8d5677019020a34837b899b54ff83d)  
+    - [L1-EXTENSION-web-application](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-web-application)  
   - Streamer API  
-    - [l1-EXTENSION-stream-writer](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-stream-writer/tree/b3b69ba5e0df47794464282a2afbf942f194bebb)  
+    - [l1-EXTENSION-stream-writer](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-stream-writer)  
   - Asynchronous Task Queue  
-    - [L1-EXTENSION-celery-worker](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-celery-worker/tree/85f6ea637cf093604a5f41a9ff6c737dd6354661)  
+    - [L1-EXTENSION-celery-worker](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-celery-worker)  
   - Sqlalchemy ORM  
-    - [L1-EXTENSION-postgres-orm](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-postgres-orm/tree/47734d4bb38b38879f965ddaa4afbb2b6971a45e)
+    - [L1-EXTENSION-postgres-orm](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-postgres-orm)
 
 # Running the Project
 We cannot share our physical box, but we can share all you need to run the project in a dummy environment :)
