@@ -1,40 +1,89 @@
 # ECE-Senior-Design-Lab-1
+ECE:4880 – Senior Design 1 at the University of Iowa tasked our team with creating a robust smart thermometer that has internet connectivity and user-friendly functionality. Our team, made up of engineers with a wide range of skillsets, was up to the challenge. Our solution provides an easy way for users to view temperature data physically on our box or remotely from a computer. There is multiple input controls used within the system, such as switches and buttons, along with cable connectors to remove sensors when there is no need for use. The user receives feedback via an OLED screen, and virtually all data is uploaded to the web. 
 
 ## System Architecture
+<div align="center">
+  <img src="img/image-5.png" alt="System Architecture" width="800">
+  <div><em>Figure 1. System Architecture</em></div>
+</div>
 
-## Pin Out
+## Raspberry Pi Pin-Out Diagram
+<div align="center">
+  <img src="img/image-3.png" alt="Raspberry Pi Pin-Out Diagram" width="800">
+  <div><em>Figure 2. Raspberry Pi Pin-Out Diagram</em></div>
+</div>
 
-## Finished Product 
-### Thermostat Box
-### Dashboard
+## Finished Product
+<div align="center">
+  <div style="display:inline-block; text-align:center; margin:8px;">
+    <img src="img/image.png" alt="Finished Product - View 1" width="260">
+    <div><em>Figure 3a. Finished Product – Internal</em></div>
+  </div>
+  <div style="display:inline-block; text-align:center; margin:8px;">
+    <img src="img/image-1.png" alt="Finished Product - View 2" width="260">
+    <div><em>Figure 3b. Finished Product – Display</em></div>
+  </div>
+  <div style="display:inline-block; text-align:center; margin:8px;">
+    <img src="img/image-2.png" alt="Finished Product - View 3" width="260">
+    <div><em>Figure 3c. Finished Product – Sensors</em></div>
+  </div>
+</div>
+
+<div align="center">
+  <img src="img/image-6.png" alt="Finished Product - Additional View" width="800">
+  <div><em>Mobile Web Application</em></div>
+</div>
+
+## Source Code
+**Embedded System:**  
+  - [L1-EXTENSION-embedded-thermostat](git@github.com:Senior-Design-2025-2026/L1-EXTENSION-embedded-thermostat.git)
+
+**Software Application:**
+  - Web Application  
+    - [L1-EXTENSION-web-application](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-web-application/tree/97a63ee64f8d5677019020a34837b899b54ff83d)  
+  - Streamer API  
+    - [l1-EXTENSION-stream-writer](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-stream-writer/tree/b3b69ba5e0df47794464282a2afbf942f194bebb)  
+  - Asynchronous Task Queue  
+    - [L1-EXTENSION-celery-worker](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-celery-worker/tree/85f6ea637cf093604a5f41a9ff6c737dd6354661)  
+  - Sqlalchemy ORM  
+    - [L1-EXTENSION-postgres-orm](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-postgres-orm/tree/47734d4bb38b38879f965ddaa4afbb2b6971a45e)
 
 # Running the Project
-## Required installations:
-To run this project, you must have docker installed on your computer. Please read the [Docker documentation](https://docs.docker.com/) on how to get started.
+We cannot share our physical box, but we can share all you need to run the project in a dummy environment :)
 
-## IMPORTANT: using git submodules
-It is required that you run this command to use the containerized version of Lab 1. This pulls the other repositories (web server, embedded code, celery worker, dummy stream writer) 
+## Prerequisites
+This repository contains submodules which must be initialized.
 
 After pulling this repository, run the following command:
 ```
-git submodule update --init L1-testing-redis-stream-writer
+git submodule update --recursive --init
 ```
 
-If there are any issues and a repository is not pulled, target each repository individually until fixed:
-ex: initializing the testing stream writer repository
+You must also have Docker installed on your computer to spin up the application locally. Please read the [Docker documentation](https://docs.docker.com/) on how to get started.
+
+<div align="center">
+  <img src="img/image-7.png" alt="Finished Product - Additional View" width="800">
+  <div><em>Running Project</em></div>
+</div>
+
+## Starting Docker Containers:
+After initializing the submodules and downloading Docker, simply run the command:
 ```
-git submodule update --init L1-testing-redis-stream-writer
+docker compose up
 ```
 
-## Running Project:
+## Viewing the Dashboard
+Running the container will expose port 8000 which your mobile device can connect to. 
+
+Within your mobile browser, enter the path:
 ```
-TBD (need to define modes)
+<IP>:8000
 ```
 
-## Running in (Test Mode):
-Although you likely do not have the physical box with thermometers, you can still run the web-server by using the following commands:
+To find your devices IP, use the following command:
 
-```
-TBD (need to define modes)
-```
+MacOS: $ ipconfig getifaddr en0
 
+Linux: $ ip addr show
+
+Windows: $ ipconfig
