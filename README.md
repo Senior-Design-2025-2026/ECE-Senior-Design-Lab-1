@@ -39,17 +39,17 @@ Authors:
 
 ## Source Code
 **Embedded System:**  
-  - [L1-EXTENSION-embedded-thermostat](git@github.com:Senior-Design-2025-2026/L1-EXTENSION-embedded-thermostat.git)
+  - [L1-EXTENSION-embedded-thermostat](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-embedded-system)
 
 **Software Application:**
   - Web Application  
-    - [L1-EXTENSION-web-application](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-web-application/tree/97a63ee64f8d5677019020a34837b899b54ff83d)  
+    - [L1-EXTENSION-web-application](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-web-application)  
   - Streamer API  
-    - [l1-EXTENSION-stream-writer](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-stream-writer/tree/b3b69ba5e0df47794464282a2afbf942f194bebb)  
+    - [l1-EXTENSION-stream-writer](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-stream-writer)  
   - Asynchronous Task Queue  
-    - [L1-EXTENSION-celery-worker](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-celery-worker/tree/85f6ea637cf093604a5f41a9ff6c737dd6354661)  
+    - [L1-EXTENSION-celery-worker](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-celery-worker)  
   - Sqlalchemy ORM  
-    - [L1-EXTENSION-postgres-orm](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-postgres-orm/tree/47734d4bb38b38879f965ddaa4afbb2b6971a45e)
+    - [L1-EXTENSION-postgres-orm](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-postgres-orm)
 
 # Running the Project
 We cannot share our physical box, but we can share all you need to run the project in a dummy environment :)
