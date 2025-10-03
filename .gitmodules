@@ -6,3 +6,9 @@
 
 [submodule "L1-EXTENSION-web-application"]
 	url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-web-application.git
+
+[submodule "L1-EXTENSION-postgres-orm"]
+	url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-postgres-orm.git
+
+[submodule "L1-EXTENSION-embedded-thermostat"]
+	url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-embedded-thermostat.git
