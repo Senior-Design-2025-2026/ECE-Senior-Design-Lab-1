@@ -39,7 +39,7 @@ Authors:
 
 ## Source Code
 **Embedded System:**  
-  - [L1-EXTENSION-embedded-thermostat](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-embedded-system)
+  - [L1-EXTENSION-embedded-thermostat](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-embedded-thermostat)
 
 **Software Application:**
   - Web Application  
