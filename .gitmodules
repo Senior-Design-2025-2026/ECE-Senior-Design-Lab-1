@@ -1,19 +1,24 @@
 [submodule "L1-EXTENSION-stream-writer"]
   url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-stream-writer.git
   path = L1-EXTENSION-stream-writer
+  branch = main
 
 [submodule "L1-EXTENSION-celery-worker"]
-	url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-celery-worker.git
-    path = L1-EXTENSION-celery-worker
+  url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-celery-worker.git
+  path = L1-EXTENSION-celery-worker
+  branch = main
 
 [submodule "L1-EXTENSION-web-application"]
-	url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-web-application.git
-    path = L1-EXTENSION-web-application
+  url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-web-application.git
+  path = L1-EXTENSION-web-application
+  branch = main
 
 [submodule "L1-EXTENSION-postgres-orm"]
-	url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-postgres-orm.git
-    path = L1-EXTENSION-postgres-orm
+  url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-postgres-orm.git
+  path = L1-EXTENSION-postgres-orm
+  branch = main
 
 [submodule "L1-EXTENSION-embedded-thermostat"]
-	url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-embedded-thermostat.git
-    path = L1-EXTENSION-embedded-thermostat
+  url = git@github.com:Senior-Design-2025-2026/L1-EXTENSION-embedded-thermostat.git
+  path = L1-EXTENSION-embedded-thermostat
+  branch = main
