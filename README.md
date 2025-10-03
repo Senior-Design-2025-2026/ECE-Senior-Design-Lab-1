@@ -1,4 +1,4 @@
-# ECE-Senior-Design-Lab-1
+# ECE-Senior-Design-Lab-1 (Extension Application)
 ECE:4880 – Senior Design 1 at the University of Iowa tasked our team with creating a robust smart thermometer that has internet connectivity and user-friendly functionality.
 
 Our solution provides an easy way for users to view temperature data physically on our box or remotely from a computer.
