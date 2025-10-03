@@ -27,23 +27,20 @@ Authors:
 
 ## Finished Product
 <div align="center">
-  <div style="display:inline-block; text-align:center; margin:8px;">
-    <img src="img/image.png" alt="Finished Product - View 1" width="260">
-    <div><em>Figure 3a. Finished Product – Internal</em></div>
+  <div style="display:flex; justify-content:center; gap:16px; text-align:center;">
+    <div>
+      <img src="img/image.png" alt="Finished Product - View 1" width="260">
+    </div>
+    <div>
+      <img src="img/image-1.png" alt="Finished Product - View 2" width="260">
+    </div>
+    <br/>
+    <div>
+      <img src="img/image-2.png" alt="Finished Product - View 3" width="400">
+    </div>
   </div>
-  <div style="display:inline-block; text-align:center; margin:8px;">
-    <img src="img/image-1.png" alt="Finished Product - View 2" width="260">
-    <div><em>Figure 3b. Finished Product – Display</em></div>
-  </div>
-  <div style="display:inline-block; text-align:center; margin:8px;">
-    <img src="img/image-2.png" alt="Finished Product - View 3" width="260">
-    <div><em>Figure 3c. Finished Product – Sensors</em></div>
-  </div>
-</div>
-
-<div align="center">
   <img src="img/image-6.png" alt="Finished Product - Additional View" width="800">
-  <div><em>Mobile Web Application</em></div>
+  <div><em>Embedded System + Web Application</em></div>
 </div>
 
 ## Source Code
