@@ -27,18 +27,12 @@ Authors:
 
 ## Finished Product
 <div align="center">
-  <div style="display:flex; justify-content:center; gap:16px; text-align:center;">
-    <div>
-      <img src="img/image.png" alt="Finished Product - View 1" width="260">
-    </div>
-    <div>
-      <img src="img/image-1.png" alt="Finished Product - View 2" width="260">
-    </div>
-    <br/>
-    <div>
-      <img src="img/image-2.png" alt="Finished Product - View 3" width="400">
-    </div>
-  </div>
+  <img src="img/image-10.png" alt="Finished Product - Additional View" width="800">
+  <div><em>Embedded System</em></div>
+  <br>
+</div>
+
+<div align="center">
   <img src="img/image-6.png" alt="Finished Product - Additional View" width="800">
   <div><em>Embedded System + Web Application</em></div>
 </div>
