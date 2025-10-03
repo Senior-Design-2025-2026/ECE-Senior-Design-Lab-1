@@ -1,5 +1,17 @@
 # ECE-Senior-Design-Lab-1
-ECE:4880 – Senior Design 1 at the University of Iowa tasked our team with creating a robust smart thermometer that has internet connectivity and user-friendly functionality. Our team, made up of engineers with a wide range of skillsets, was up to the challenge. Our solution provides an easy way for users to view temperature data physically on our box or remotely from a computer. There is multiple input controls used within the system, such as switches and buttons, along with cable connectors to remove sensors when there is no need for use. The user receives feedback via an OLED screen, and virtually all data is uploaded to the web. 
+ECE:4880 – Senior Design 1 at the University of Iowa tasked our team with creating a robust smart thermometer that has internet connectivity and user-friendly functionality.
+
+Our solution provides an easy way for users to view temperature data physically on our box or remotely from a computer.
+
+There are multiple input controls used within the system, such as switches and buttons, along with cable connectors to remove sensors when there is no need for use.
+
+The user receives feedback via an OLED screen, and virtually all data is uploaded to the web.
+
+Authors:
+- [Steven Austin]()
+- [Zack Mulholland](https://www.linkedin.com/in/zack-mulholland-317914254/)
+- [Sage Marks](https://www.linkedin.com/in/sage-marks/)
+- [Matthew Krueger](https://www.linkedin.com/in/mattnkrueger/)
 
 ## System Architecture
 <div align="center">
