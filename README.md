@@ -1,17 +1,10 @@
 # ECE-Senior-Design-Lab-1 (Extension Application)
-ECE:4880 – Senior Design 1 at the University of Iowa tasked our team with creating a robust smart thermometer that has internet connectivity and user-friendly functionality.
 
-Our solution provides an easy way for users to view temperature data physically on our box or remotely from a computer.
+To move past a prototype and build a more robust system, this application was created with support for further iterations of the project in mind. Having already completed the base requirements, this application was purely experimental and aimed at how our protoype system could be improved.
 
-There are multiple input controls used within the system, such as switches and buttons, along with cable connectors to remove sensors when there is no need for use.
+This system utilizes four components: a dedicated entry point for streaming data into a UNIX Socket provided Redis Stream, a PostgreSQL database to store temperature readings and user information, and an asynchronous processor with a pool of workers to handle blocking processes with high overhead in the background, and an improved dashboard UI designed for mobile devices. Additionally, all components were containerized using Docker for ease of scalability and deployment.  
 
-The user receives feedback via an OLED screen, and virtually all data is uploaded to the web.
-
-Authors:
-- [Steven Austin]()
-- [Zack Mulholland](https://www.linkedin.com/in/zack-mulholland-317914254/)
-- [Sage Marks](https://www.linkedin.com/in/sage-marks/)
-- [Matthew Krueger](https://www.linkedin.com/in/mattnkrueger/)
+With this performant and extensible foundation, any smart-home application is straightforward and highly configurable; Adding an additional sensor (thermometer, humidity, air quality, etc) just means adding new endpoints to handle sensor information within the Streamer API service, creating a new stream, and creating a new table within the database. The additional sensor information can then be used for analytics and real-time operations in response to external sensor readings.  
 
 ## System Architecture
 <div align="center">
