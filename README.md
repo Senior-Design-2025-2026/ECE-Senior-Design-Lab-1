@@ -1,8 +1,8 @@
 # ECE-Senior-Design-Lab-1 (Extension Application)
 
-To move past a prototype and build a more robust system, this application was created with support for further iterations of the project in mind. Having already completed the base requirements, this application was purely experimental and aimed at how our protoype system could be improved.
+To move past a prototype and build a more robust system, this application was created with support for further iterations of the project in mind. Having already completed the base requirements, this application was purely experimental and aimed at how our protoype could be improved.
 
-This system utilizes four components: a dedicated entry point for streaming data into a UNIX Socket provided Redis Stream, a PostgreSQL database to store temperature readings and user information, and an asynchronous processor with a pool of workers to handle blocking processes with high overhead in the background, and an improved dashboard UI designed for mobile devices. Additionally, all components were containerized using Docker for ease of scalability and deployment.  
+The biggest change with between this extension and the [original] is the architecture. This system utilizes four components: a dedicated entry point for streaming data into a UNIX Socket provided Redis Stream, a PostgreSQL database to store temperature readings and user information, and an asynchronous processor with a pool of workers to handle blocking processes with high overhead in the background, and an improved dashboard UI designed for mobile devices. Additionally, all components were containerized using Docker for ease of scalability and deployment.  
 
 With this performant and extensible foundation, any smart-home application is straightforward and highly configurable; Adding an additional sensor (thermometer, humidity, air quality, etc) just means adding new endpoints to handle sensor information within the Streamer API service, creating a new stream, and creating a new table within the database. The additional sensor information can then be used for analytics and real-time operations in response to external sensor readings.  
 
