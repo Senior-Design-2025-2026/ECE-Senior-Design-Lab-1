@@ -11,7 +11,7 @@ With this extensible foundation, any smart-home application is straightforward a
 
 ## (New) System Architecture
 <div align="center">
-  <img src="img/image-5.png" alt="System Architecture" width="800">
+  <img src="img/arch.png" alt="System Architecture" width="800">
   <div><em>Figure 1. System Architecture</em></div>
 </div>
 
@@ -74,15 +74,19 @@ docker compose up
 ## Viewing the Dashboard
 Running the container will expose port 8000 which your mobile device can connect to. 
 
-Within your mobile browser, enter the path:
-```
-<IP>:8000
-```
-
 To find your devices IP, use the following command:
 
-MacOS: $ ipconfig getifaddr en0
+**MacOS**: `ipconfig getifaddr en0`
 
-Linux: $ ip addr show
+**Linux**: `ip addr show`
 
-Windows: $ ipconfig
+**Windows**: `ipconfig`
+
+Then, within your mobile browser, enter the path:
+
+```
+<IP>:8000    
+```
+ex: 127.0.0.1:8000 (this can be used for viewing on machine running the containers)
+
+_(alternatively, you can open the computer running the container but the CSS is not configured for larger screens and will not look as nice)_
