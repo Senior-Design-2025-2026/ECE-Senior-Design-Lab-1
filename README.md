@@ -9,16 +9,22 @@ With this extensible foundation, any smart-home application is straightforward a
 [Original Embedded Code](https://github.com/Senior-Design-2025-2026/L1-embedded-thermostat) | [Original Web Application](https://github.com/Senior-Design-2025-2026/L1-web-application) 
 | [Lab Report](img/lab-1.pdf)
 
-## (New) System Architecture
+## System Architecture
 <div align="center">
   <img src="img/arch.png" alt="System Architecture" width="800">
-  <div><em>Figure 1. System Architecture</em></div>
+  <div><em>System Architecture</em></div>
 </div>
 
 ## Raspberry Pi Pin-Out Diagram
 <div align="center">
   <img src="img/image-3.png" alt="Raspberry Pi Pin-Out Diagram" width="800">
-  <div><em>Figure 2. Raspberry Pi Pin-Out Diagram</em></div>
+  <div><em>Raspberry Pi Pin-Out Diagram</em></div>
+</div>
+
+## Database Contents
+<div align="center">
+  <img src="img/schema.png" alt="application responsibility" width="400">
+  <div><em>Tables</em></div>
 </div>
 
 ## Finished Product
