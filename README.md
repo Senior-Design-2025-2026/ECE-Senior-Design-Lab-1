@@ -12,13 +12,13 @@ With this extensible foundation, any smart-home application is straightforward a
 ## System Architecture
 <div align="center">
   <img src="img/arch.png" alt="System Architecture" width="800">
-  <div><em>Figure 1. System Architecture</em></div>
+  <div><em>System Architecture</em></div>
 </div>
 
 ## Raspberry Pi Pin-Out Diagram
 <div align="center">
   <img src="img/image-3.png" alt="Raspberry Pi Pin-Out Diagram" width="800">
-  <div><em>Figure 2. Raspberry Pi Pin-Out Diagram</em></div>
+  <div><em>Raspberry Pi KiCad Diagram</em></div>
 </div>
 
 ## Finished Product
@@ -30,7 +30,7 @@ With this extensible foundation, any smart-home application is straightforward a
 
 <div align="center">
   <img src="img/image-6.png" alt="Finished Product - Additional View" width="800">
-  <div><em>Embedded System + Web Application</em></div>
+  <div><em>Web Application</em></div>
 </div>
 
 ## Source Code
