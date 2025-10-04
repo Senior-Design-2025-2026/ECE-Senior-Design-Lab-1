@@ -21,7 +21,7 @@ With this extensible foundation, any smart-home application is straightforward a
   <div><em>Raspberry Pi Pin-Out Diagram</em></div>
 </div>
 
-## Database Contents
+## Database
 <div align="center">
   <img src="img/schema.png" alt="application responsibility" width="400">
   <div><em>Tables</em></div>
