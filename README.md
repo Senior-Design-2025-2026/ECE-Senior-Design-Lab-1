@@ -36,7 +36,7 @@ With this extensible foundation, any smart-home application is straightforward a
 
 <div align="center">
   <img src="img/image-6.png" alt="Finished Product - Additional View" width="800">
-  <div><em>Embedded System + Web Application</em></div>
+  <div><em>Web Application</em></div>
 </div>
 
 ## Source Code
