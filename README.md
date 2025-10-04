@@ -9,7 +9,7 @@ With this extensible foundation, any smart-home application is straightforward a
 [Original Embedded Code](https://github.com/Senior-Design-2025-2026/L1-embedded-thermostat) | [Original Web Application](https://github.com/Senior-Design-2025-2026/L1-web-application) 
 | [Lab Report](img/lab-1.pdf)
 
-## (New) System Architecture
+## System Architecture
 <div align="center">
   <img src="img/arch.png" alt="System Architecture" width="800">
   <div><em>Figure 1. System Architecture</em></div>
