@@ -6,7 +6,7 @@ The biggest change with between this extension application and the [original app
 
 With this performant and extensible foundation, any smart-home application is straightforward and highly configurable; Adding an additional sensor (thermometer, humidity, air quality, etc) just means adding new endpoints to handle sensor information within the Streamer API service, creating a new stream, and creating a new table within the database. The additional sensor information can then be used for analytics and real-time operations in response to external sensor readings.  
 
-## System Architecture
+## (New) System Architecture
 <div align="center">
   <img src="img/image-5.png" alt="System Architecture" width="800">
   <div><em>Figure 1. System Architecture</em></div>
