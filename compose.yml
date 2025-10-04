@@ -27,6 +27,7 @@ services:
       - DASH_PORT=${DASH_PORT}
       - SOCK=${SOCK}
       - DB_URL=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres_db:5432/${POSTGRES_DB}
+      - MODE=${MODE}
     volumes:
       - redis-socket:/run/redis
     depends_on:
