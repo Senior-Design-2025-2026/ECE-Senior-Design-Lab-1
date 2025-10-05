@@ -41,38 +41,23 @@ With this extensible foundation, any smart-home application is straightforward a
 
 ## Source Code
 **Embedded System:**  
-  - [L1-EXTENSION-embedded-thermostat](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-embedded-thermostat)
+  - [L1-EXTENSION-embedded-thermostat](L1-EXTENSION-embedded-thermostat/README.md)
 
 **Software Application:**
   - Web Application  
-    - [L1-EXTENSION-web-application](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-web-application)  
+    - [L1-EXTENSION-web-application](L1-EXTENSION-web-application/README.md)
   - Streamer API  
-    - [l1-EXTENSION-stream-writer](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-stream-writer)  
+    - [l1-EXTENSION-stream-writer](l1-EXTENSION-stream-writer/README.md)  
   - Asynchronous Task Queue  
-    - [L1-EXTENSION-celery-worker](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-celery-worker)  
+    - [L1-EXTENSION-celery-worker](L1-EXTENSION-celery-worker/README.md)  
   - Sqlalchemy ORM  
-    - [L1-EXTENSION-postgres-orm](https://github.com/Senior-Design-2025-2026/L1-EXTENSION-postgres-orm)
+    - [L1-EXTENSION-postgres-orm](L1-EXTENSION-postgres-orm/README.md)
 
-# Running the Project
-We cannot share our physical box, but we can share all you need to run the project in a dummy environment :)
 
-## Prerequisites
-This repository contains submodules which must be initialized.
+# View the Application Locally
+You only need to have Docker installed on your computer to run the "DUMMY DATA MODE" of the application locally. Please read the [Docker documentation](https://docs.docker.com/) on how to get started.
 
-After pulling this repository, run the following command:
-```
-git submodule update --recursive --init
-```
-
-You must also have Docker installed on your computer to spin up the application locally. Please read the [Docker documentation](https://docs.docker.com/) on how to get started.
-
-<div align="center">
-  <img src="img/image-7.png" alt="Finished Product - Additional View" width="800">
-  <div><em>Running Project</em></div>
-</div>
-
-## Starting Docker Containers:
-After initializing the submodules and downloading Docker, simply run the command:
+## Running the Containers:
 ```
 docker compose up
 ```
@@ -96,3 +81,9 @@ Then, within your mobile browser, enter the path:
 ex: 127.0.0.1:8000 (this can be used for viewing on machine running the containers)
 
 _(alternatively, you can open the computer running the container but the CSS is not configured for larger screens and will not look as nice)_
+
+
+<div align="center">
+  <img src="img/image-7.png" alt="Finished Product - Additional View" width="800">
+  <div><em>Running Project</em></div>
+</div>
