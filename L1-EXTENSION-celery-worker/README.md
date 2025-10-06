@@ -19,5 +19,5 @@ Asynchronous task queue designed to remove load from dashboard web application. 
 - Sends emails containing critical readings to alert user(s)
 
 ## Key Libraries/Services
-**[Celery](https://redis.io/docs/latest/develop/data-types/streams/)**: 
+**[Celery](https://docs.celeryq.dev/en/main/index.html#)**: 
 - Task queue implementation

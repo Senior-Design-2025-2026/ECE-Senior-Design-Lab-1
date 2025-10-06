@@ -6,8 +6,8 @@ Keeping the embedded system the relatively unchanged, the new software applicati
 
 With this extensible foundation, any smart-home application is straightforward and highly configurable; Adding an additional sensor (thermometer, humidity, air quality, etc) just means adding new endpoints to handle sensor information within the Streamer API service, creating a new stream, and creating a new table within the database. The additional sensor information can then be used for analytics and real-time operations in response to external sensor readings.  
 
-[Original Embedded Code](https://github.com/Senior-Design-2025-2026/L1-embedded-thermostat) | [Original Web Application](https://github.com/Senior-Design-2025-2026/L1-web-application) 
-| [Lab Report](img/lab-1.pdf)
+[Lab Requirements](img/lab-1.pdf) | [Original Embedded Code](https://github.com/Senior-Design-2025-2026/L1-embedded-thermostat) | [Original Web Application](https://github.com/Senior-Design-2025-2026/L1-web-application) 
+| [Lab Report](img/lab1_report.pdf)
 
 ## System Architecture
 <div align="center">

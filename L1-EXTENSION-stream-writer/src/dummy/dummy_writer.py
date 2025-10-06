@@ -27,7 +27,6 @@ def dummy_stream_record(sensor_id:str, timestamp:int):
     )
 
 def dummy_writer(r, celery_client):
-    # SETUP - start both sensors on
     r.set("virtual:1:status", "ON")
     r.set("virtual:2:status", "ON")
 

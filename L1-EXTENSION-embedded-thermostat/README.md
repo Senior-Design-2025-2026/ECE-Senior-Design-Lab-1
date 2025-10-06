@@ -21,7 +21,6 @@ Physical embedded system to read and send real-time temperature information. We 
 **2. Post Readings to Streamer API:**
 - Send temperature readings to the Streamer API be visualized downstream within the dashboard
 
-## Key (External) Libraries
 **[WiringPi](https://github.com/wiringpi):** 
 - Used for physical wiring of the temperature sensor
 
